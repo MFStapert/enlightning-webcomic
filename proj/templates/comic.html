@@ -1,0 +1,22 @@
+{% extends 'includes/layout.html' %}
+{% block body %}
+<div id="comic-container">
+    <div id="comic-header-img-container">
+        <img id="comic-header-img" src=""/>
+    </div>
+    <div id="comic-img-container">
+        <div id="comic-container-right">
+            <a id="previous-btn"></a>
+        </div>
+        <div id="comic-container-center">
+            <canvas id="ctx">
+            </canvas>
+        </div>
+        <div id="comic-container-left">
+            <a id="next-btn"></a>
+        </div>
+    </div>
+</div>
+
+<script src="/static/js/comic/main.js" type="module"></script>
+{% endblock %}

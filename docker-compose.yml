@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  server:
+    build: .
+    volumes:
+      - .:/comic
+    ports:
+      - 80:80

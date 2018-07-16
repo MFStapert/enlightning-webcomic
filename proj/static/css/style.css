@@ -1,0 +1,559 @@
+/********
+General
+********/
+@font-face {
+    font-family: ChewedPenBB;
+    src: url(/static/font/ChewedPenBB.otf) format("opentype");
+}
+
+body {
+    font-family: 'ChewedPenBB' !important;
+    background-color: #ffe6e1!important;
+}
+
+body.clarice {
+    background-color: #f7e1e9!important;
+}
+
+body.daria {
+    background-color: #e6edf7!important;
+}
+
+body.mateusz {
+    background-color: #e3e9dd!important;
+}
+
+#ctx {
+    display: block;
+    margin: auto;
+}
+
+#ctx-start {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+#comic-start-header {
+    margin: 25px 0px;
+    text-align: center;
+    font-size: 60px;
+}
+
+/********
+Navigation
+********/
+#home-container {
+    max-width: 1300px;
+}
+
+#header-container {
+    height: 22vw;
+}
+
+#header-text {
+    background-image: url(/static/img/site/header/header.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:100%;
+    width:21vw;
+}
+
+#header-img {
+    display: block;
+    background-image: url(/static/img/site/header/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -19vw;
+    left: 1vw;
+    height: 20vw;
+    width: 100%;
+}
+
+/* #header-img:hover {
+  transform: rotate(1080deg);
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+} */
+
+#nav-home {
+    display: block;
+    background-image: url(/static/img/site/header/home.png);
+    background-size: contain;
+}
+
+#nav-discuss {
+    margin-top: 10%;
+    display: block;
+    background-image: url(/static/img/site/header/discuss.png);
+    background-size: contain;
+}
+
+#nav-about {
+    display: block;
+    background-image: url(/static/img/site/header/about.png);
+    background-size: contain;
+}
+
+#home-navigation-container {
+    width: 34%;
+    margin: 50px auto;
+}
+
+.home-navigation-buttons {
+    margin-top: 2vw;
+    height:10vw;
+}
+
+.home-navigation-buttons > * {
+    height: 7.2vw;
+    width: 7.2vw;
+    float: left;
+    margin-top:0.1vw;
+}
+
+#site-navigation-comic {
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.navigation-buttons-comic > * {
+    height:75px;
+    width:75px;
+    margin-top:10px;
+    margin-left:10px;
+}
+
+/****
+About
+****/
+#about-wrapper {
+    width: 1140px;
+}
+
+#about-header {
+    font-size: 70px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+#about-wrapper {
+    width: 1005px;
+}
+
+.about-container {
+    padding: 25px;
+    font-size: 15px;
+    line-height: 14px;
+}
+
+.about-portrait {
+    height: 50%;
+}
+
+.about-container-left .about-portrait {
+    float:left;
+}
+
+.about-container-right .about-portrait {
+    float:right;
+}
+
+.about-container-right .about-text {
+    text-align: left;
+}
+
+.about-container-left .about-text {
+    text-align: right;
+}
+
+.about-icons img {
+    height: 45px;
+    float: left;
+}
+
+#about-zie {
+    width: 491px;
+    height: 312px;
+    background-image: url(/static/img/site/about/bgs/zie.png);
+    float:left;
+}
+
+#about-zie .about-text {
+    color: #ba52e6;
+}
+
+#about-daria {
+    width: 513px;
+    height: 256px;
+    background-image: url(/static/img/site/about/bgs/daria.png);
+    float:left;
+}
+
+#about-daria .about-text {
+    color: #4f82c8;
+}
+
+#about-marijn {
+    width: 481px;
+    height: 298px;
+    background-image: url(/static/img/site/about/bgs/marijn.png);
+    float:left;
+}
+
+#about-clarice {
+    width: 512px;
+    height: 253px;
+    background-image: url(/static/img/site/about/bgs/clarice.png);
+    float:right;
+}
+
+#about-clarice .about-text {
+        color: #c63365;
+}
+
+#about-mateusz {
+    width: 515px;
+    height: 250px;
+    background-image: url(/static/img/site/about/bgs/mateusz.png);
+    float:right;
+}
+
+#about-mateusz .about-text {
+        color: #385c16;
+}
+
+#about-copyright {
+    width: 462px;
+    height: 132px;
+    background-image: url(/static/img/site/about/bgs/copyright.png);
+    float:left;
+}
+
+#about-copyright .about-text {
+        color: #989898;
+}
+
+/*
+Pattern
+*/
+#pattern-intro-ctx {
+    position: absolute;
+}
+
+#pattern-maker-container {
+    position: relative;
+    width:969px;
+    height:711px;
+    margin:5% auto;
+    display: block;
+    background-image: url(/static/img/comic/pattern/background.png);
+    background-size:contain;
+}
+
+#pattern-intro-ctx {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+#pattern-container-left {
+    float:left;
+    height:711px;
+    width: 240px;
+}
+
+#pattern-container-center {
+    float:left;
+    height:711px;
+    width: 511px;
+}
+
+#pattern-container-right {
+    float:left;
+    height:711px;
+    width: 218px;
+}
+
+#pattern-ctx {
+    margin-top: 124px;
+}
+
+.pattern-container {
+    width: 90px;
+    height: 90px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#save-pattern {
+    background-image: url(../img/comic/pattern/buttons/normal/finish.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 320px;
+    height: 40px;
+    margin-left: 95px;
+}
+
+#pattern-cold-0 {
+    margin-top:110px;
+    margin-left: 25px;
+}
+
+#pattern-warm-0 {
+    margin-left: 95px;
+}
+
+#pattern-cold-1 {
+    margin-left: 25px;
+}
+
+#pattern-warm-1 {
+    margin-left: 95px;
+}
+
+#pattern-cold-2 {
+    margin-left: 25px;
+}
+
+#pattern-warm-2 {
+    margin-left: 95px;
+}
+
+#increase-scale {
+    background-image: url(../img/comic/pattern/buttons/normal/increase-size.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 78px;
+    margin-top: 109px;
+    margin-left: 78px;
+}
+
+#decrease-scale {
+    background-image: url(../img/comic/pattern/buttons/normal/decrease-size.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 42px;
+    margin-left: 74px;
+}
+
+#increase-layer {
+    background-image: url(../img/comic/pattern/buttons/normal/increase-layer.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 78px;
+    margin-top: 109px;
+    margin-left: 78px;
+}
+
+#decrease-layer {
+    background-image: url(../img/comic/pattern/buttons/normal/decrease-layer.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 42px;
+    margin-left: 74px;
+}
+
+#background-container {
+    width: 100px;
+    margin-top: 112px;
+    margin-left: 73px;
+}
+
+.change-background {
+    width: 40px;
+    height: 25px;
+    float: left;
+    margin: 5px;
+}
+
+#change-background-1 {
+    background-image: url(../img/comic/pattern/buttons/background-buttons/1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+ #change-background-2 {
+    background-image: url(../img/comic/pattern/buttons/background-buttons/2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 25px;
+}
+
+#change-background-3 {
+    background-image: url(../img/comic/pattern/buttons/background-buttons/3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 25px;
+}
+
+#change-background-4 {
+    background-image: url(../img/comic/pattern/buttons/background-buttons/4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 25px;
+}
+
+#change-background-5 {
+    background-image: url(../img/comic/pattern/buttons/background-buttons/5.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 25px;
+}
+
+#change-background-6 {
+    background-image: url(../img/comic/pattern/buttons/background-buttons/6.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 25px;
+}
+
+/********
+Comic
+********/
+#comic-container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+#comic-header-img-container {
+    padding-top: 10px;
+    height: 90px;
+    width: 100%;
+}
+
+#comic-img-container {
+    overflow: auto;
+    width: auto;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+#comic-header-img {
+    margin: 0 auto;
+    height: 78px;
+    display: block;
+}
+
+#comic-container-right {
+    position: relative;
+    float: left;
+    width: 83px;
+    margin-top: 10%;
+}
+
+#comic-container-center {
+    float: left;
+    max-width: 1027px;
+}
+
+#comic-container-left {
+    position: relative;
+    float: left;
+    width: 83px;
+}
+
+#previous-btn {
+    height:90px;
+    width:83px;
+    cursor:pointer;
+    float: right;
+    margin-top: 214px;
+}
+
+#next-btn {
+    height:90px;
+    width:83px;
+    cursor:pointer;
+    float: right;
+    margin-top: 336px;
+}
+
+body.clarice #previous-btn {
+    display: block;
+    background-image: url(/static/img/site/comic-nav/clarice/normal/links.png);
+    background-size:contain;
+}
+
+body.clarice #previous-btn:hover {
+    display: block;
+    background-image: url(/static/img/site/comic-nav/clarice/hover/links.png);
+    background-size:contain;
+}
+
+body.clarice #next-btn {
+    display: block;
+    background-image: url(/static/img/site/comic-nav/clarice/normal/rechts.png);
+    background-size:contain;
+}
+
+body.clarice #next-btn:hover  {
+    display: block;
+    background-image: url(/static/img/site/comic-nav/clarice/hover/rechts.png);
+    background-size:contain;
+}
+
+body.daria #previous-btn {
+    display: block;
+    background-image: url(/static/img/site/comic-nav/daria/normal/links.png);
+    background-size:contain;
+}
+
+body.daria #previous-btn:hover {
+    display: block;
+    background-image: url(/static/img/site/comic-nav/daria/hover/links.png);
+    background-size:contain;
+}
+
+body.daria #next-btn {
+    display: block;
+    background-image: url(/static/img/site/comic-nav/daria/normal/rechts.png);
+    background-size:contain;
+}
+
+body.daria #next-btn:hover {
+    display: block;
+    background-image: url(/static/img/site/comic-nav/daria/hover/rechts.png);
+    background-size:contain;
+}
+
+body.mateusz #previous-btn {
+    display: block;
+    background-image: url(/static/img/site/comic-nav/mateusz/normal/links.png);
+    background-size:contain;
+}
+
+body.mateusz #previous-btn:hover {
+    display: block;
+    background-image: url(/static/img/site/comic-nav/mateusz/hover/links.png);
+    background-size:contain;
+}
+
+body.mateusz #next-btn {
+    display: block;
+    background-image: url(/static/img/site/comic-nav/mateusz/normal/rechts.png);
+    background-size:contain;
+}
+
+body.mateusz #next-btn:hover {
+    display: block;
+    background-image: url(/static/img/site/comic-nav/mateusz/hover/rechts.png);
+    background-size:contain;
+}

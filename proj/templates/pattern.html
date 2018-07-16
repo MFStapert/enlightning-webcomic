@@ -1,0 +1,38 @@
+{% extends 'includes/layout.html' %}
+{% block body %}
+    <div id="pattern-maker-container">
+        <div id="pattern-container-left">
+            <div id="pattern-cold-0" class="pattern-container pattern-cold"></div>
+            <div id="pattern-warm-0" class="pattern-container pattern-warm"></div>
+            <div id="pattern-cold-1" class="pattern-container pattern-cold"></div>
+            <div id="pattern-warm-1" class="pattern-container pattern-warm"></div>
+            <div id="pattern-cold-2" class="pattern-container pattern-cold"></div>
+            <div id="pattern-warm-2" class="pattern-container pattern-warm"></div>
+        </div>
+
+        <div id="pattern-container-center">
+            <canvas id="pattern-ctx">
+            </canvas>
+            <div id="save-pattern"></div>
+        </div>
+
+        <div id="pattern-container-right">
+            <div id="increase-scale"></div>
+            <div id="decrease-scale"></div>
+
+            <div id="increase-layer"></div>
+            <div id="decrease-layer"></div>
+
+            <div id="background-container">
+                <div class="change-background" id="change-background-1"></div>
+                <div class="change-background" id="change-background-2"></div>
+                <div class="change-background" id="change-background-3"></div>
+                <div class="change-background" id="change-background-4"></div>
+                <div class="change-background" id="change-background-5"></div>
+                <div class="change-background" id="change-background-6"></div>
+            </div>
+        </div>
+    </div>
+
+	<script src="/static/js/patternmaker.js" type="module"></script>
+{% endblock %}

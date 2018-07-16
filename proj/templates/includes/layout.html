@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Enlightning</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+        <link rel="stylesheet" href="/static/vendor/bootstrap.min.css">
+    </head>
+
+    <body>
+        <div id="main-container">
+			{% include 'includes/_navbar.html' %}
+            <main role="main">
+			{% block body %}{% endblock %}
+            </main>
+
+            <script src="/static/vendor/jquery-3.2.1.slim.min.js"></script>
+            <script src="/static/vendor/popper.min.js"></script>
+            <script src="/static/vendor/bootstrap.min.js"></script>
+            <script src="/static/vendor/createjs-2015.11.26.min.js"></script>
+        </div>
+    </body>
+</html>
