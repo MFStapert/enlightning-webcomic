@@ -176,7 +176,3 @@ def populate():
         Panel(panel_url="/static/img/comic/after/2/clarice/5/panel.png", show_first_animation=True)
 
     db.commit()
-
-
-if __name__ == "__main__":
-    populate()

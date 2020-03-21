@@ -2,6 +2,13 @@ import os
 from flask import Flask
 from flask_cors import CORS
 
+class BaseConfig:
+    DEBUG = False
+    SECRET_KEY = "webcomic"
+    PORT = 8080
+
+class DevelopmentConfig(BaseConfig):
+    DEBUG = True
 
 def create_app():
     # Instantiate
@@ -10,9 +17,8 @@ def create_app():
     # CORS
     CORS(app)
 
-    # Settings
-    app_settings = os.getenv("APP_SETTINGS")
-    app.config.from_object(app_settings)
+    # Settings    
+    app.config.from_object(BaseConfig)
 
     # Routes
     from proj.site.site import site_blueprint

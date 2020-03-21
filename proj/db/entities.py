@@ -5,9 +5,8 @@ from proj.db.utils import EnumConverter
 
 db = Database()
 
-db.bind(provider="sqlite", filename="db.sqlite", create_db=True)
+db.bind(provider="sqlite", filename="db.sqlite")
 db.provider.converter_classes.append((Enum, EnumConverter))
-
 
 class AnimationType(Enum):
     default = 0
@@ -34,4 +33,4 @@ class Animation(db.Entity):
     animation_type = Optional(AnimationType)
 
 
-db.generate_mapping(create_tables=True)
+db.generate_mapping()
