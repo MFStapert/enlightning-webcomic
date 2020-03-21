@@ -10,6 +10,4 @@ COPY . /comic
 WORKDIR /comic
 RUN pip3 install -r requirements.txt
 
-CMD python3 populate.py
-
 CMD gunicorn -w 4 -b 0.0.0.0:80 app:app
